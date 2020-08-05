@@ -71,8 +71,6 @@ class ClienteCons extends React.Component {
 
     deletar = () => {
 
-//console.log('id: '+ this.state.clienteDeletar.id);
-
         this.clienteService.deletar(this.state.clienteDeletar.id).then( response => {
             const index = this.state.clientes.indexOf(this.state.clienteDeletar);
             this.state.clientes.splice(index, 1);
@@ -154,15 +152,17 @@ class ClienteCons extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="row">
+                    <div className="col-lg-12 offset-md-6">
                     <Dialog header="Confirmação" 
                             visible={this.state.showConfirmDialogDel} 
-                            style={{ width: '20%' }}
+                            style={{ width: '50vw' }}
                             footer={confirmaDialogFooter}
                             modal={true} 
                             onHide={() => this.setState({ showConfirmDialogDel: false })}>
                         Confirma a exclusão do cliente?
                     </Dialog>
+                    </div>
                 </div>
             </Card>
         )
