@@ -1,4 +1,5 @@
 import React from 'react'
+import { Table } from 'react-bootstrap'
 import formatter from 'currency-formatter'
 
 export default props => {
@@ -27,7 +28,7 @@ export default props => {
     });
 
     return (
-        <table className="table table-hover">
+        <Table responsive>
             <thead>
                 <tr>
                     <th scope="col">Código</th>
@@ -39,6 +40,6 @@ export default props => {
             <tbody>
                 {rows}
             </tbody>
-        </table>
+        </Table>
     )
 }

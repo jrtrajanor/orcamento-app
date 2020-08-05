@@ -1,11 +1,12 @@
 import React from 'react'
+import { Table } from 'react-bootstrap';
 
 export default props => {
 
     const rows = props.clientes.map(clientes => {
         return(
             <tr key={clientes.id}>
-                <td>{clientes.id}</td>
+                <td> {clientes.id} </td>
                 <td>{clientes.nome}</td>
                 <td>{clientes.email}</td>
                 <td>{clientes.fone}</td>
@@ -27,7 +28,7 @@ export default props => {
     });
 
     return (
-        <table className="table table-hover">
+        <Table responsive>
             <thead>
                 <tr>
                     <th scope="col">Código</th>
@@ -40,6 +41,6 @@ export default props => {
             <tbody>
                 {rows}
             </tbody>
-        </table>
+        </Table>
     )
 }

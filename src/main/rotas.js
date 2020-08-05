@@ -40,8 +40,8 @@ function Rotas(props) {
             <Switch>
                 <Route path="/login" component={Login} />
                 <RotaAutenticada isUsuarioAutenticado={props.isUsuarioAutenticado} path="/home" component={Home} />
-                <RotaAutenticada isUsuarioAutenticado="true" path="/consulta-usuarios" component={UsuarioCons} />
-                <RotaAutenticada isUsuarioAutenticado="true" path="/cadastro-usuarios/:id?" component={UsuarioCad} />
+                <RotaAutenticada isUsuarioAutenticado={props.isUsuarioAutenticado} path="/consulta-usuarios" component={UsuarioCons} />
+                <RotaAutenticada isUsuarioAutenticado={props.isUsuarioAutenticado} path="/cadastro-usuarios/:id?" component={UsuarioCad} />
                 <RotaAutenticada isUsuarioAutenticado={props.isUsuarioAutenticado} path="/consulta-clientes" component={ClienteCons} />
                 <RotaAutenticada isUsuarioAutenticado={props.isUsuarioAutenticado} path="/cadastro-clientes/:id?" component={ClienteCad} />
                 <RotaAutenticada isUsuarioAutenticado={props.isUsuarioAutenticado} path="/consulta-tipoItems" component={TipoItemCons} />
