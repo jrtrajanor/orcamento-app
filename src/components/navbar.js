@@ -9,8 +9,8 @@ function NavBar(props) {
     return (
         
         
-        <Navbar bg="primary" expand="lg" className="navbar-dark bg-primary">
-            
+        <Navbar bg="primary" expand="lg" className="fixed-top navbar-dark bg-primary">
+            <div className="container">
             <Navbar.Brand bg="light" href="#home">Sistema de comissão</Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav invisible" className= {props.isUsuarioAutenticado ? "visible" : "invisible"}/>
@@ -25,6 +25,7 @@ function NavBar(props) {
                     <NavbarItem render={props.isUsuarioAutenticado} onClick={props.deslogar} href="#/login" label="Sair"/>
                 </Nav>
             </Navbar.Collapse>
+            </div>
         </Navbar>
         
     )
