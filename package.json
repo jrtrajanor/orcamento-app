@@ -2,10 +2,6 @@
   "name": "orcamento-app",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "npm": "6.14.4",
-    "node": "12.16.2"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -30,8 +26,7 @@
     "toastr": "^2.1.4"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
