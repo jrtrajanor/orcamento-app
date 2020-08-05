@@ -24,6 +24,7 @@
     "react-checkbox-component": "^0.1.15",
     "react-currency-format": "^1.0.0",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "^4.4.1",
     "toastr": "^2.1.4"
