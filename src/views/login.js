@@ -68,20 +68,20 @@ class Login extends React.Component {
                                 <div className="col-lg-12">
                                     <div className="bs-component">
                                         <fieldset>
-                                            <FormGroup label="E-mail: *" htmlFor="exampleInputEmail1">
+                                            <FormGroup label="Usuário: *" htmlFor="userInput">
                                                 <input type="email"
                                                     className="form-control"
-                                                    id="exampleInputEmail1"
+                                                    id="userInput"
                                                     aria-describedby="emailHelp"
-                                                    placeholder="Digite o Email"
+                                                    placeholder="Digite o seu usuário"
                                                     value={this.state.usernameOrEmail}
                                                     onChange={(e) => this.setState({ usernameOrEmail: e.target.value })} />
                                             </FormGroup>
-                                            <FormGroup label="E-mail: *" htmlFor="exampleInputPassword1">
+                                            <FormGroup label="Senha: *" htmlFor="passInput">
                                                 <input type="password"
                                                     className="form-control"
-                                                    id="exampleInputPassword1"
-                                                    placeholder="Password"
+                                                    id="passInput"
+                                                    placeholder="Informe a senha"
                                                     value={this.state.password}
                                                     onChange={(e) => this.setState({ password: e.target.value })} />
                                             </FormGroup>
