@@ -88,7 +88,7 @@ class Login extends React.Component {
                                             <button onClick={this.validar} 
                                                     type="button" 
                                                     className="btn btn-success">
-                                                    <i className= "pi pi-sign-in"></i> Entrar</button>
+                                                    <i className= "pi pi-sign-in"></i> Entrar</button> 
                                         </fieldset>
                                     </div>
                                 </div>

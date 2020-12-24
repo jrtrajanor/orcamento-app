@@ -45,7 +45,7 @@ class TipoItemCons extends React.Component {
                 this.setState({tipoItems: lista});
 
             }).catch( error => {
-                mensagemErro(error.response.data);
+                mensagemErro(error.response.data.message);
             });
     }
     
